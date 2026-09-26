@@ -1,0 +1,8 @@
+{
+  "name": "Ai là triệu phú Toán 12 -BÀI 1",
+  "description": "TÍNH ĐƠN ĐIỆU VÀ CỰC TRỊ CỦA HÀM SỐ",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

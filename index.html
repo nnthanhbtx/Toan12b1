@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#020024" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="TriệuPhú12" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <!-- KaTeX CDN stylesheet for pristine mathematical fractions, vectors and fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+    <title>Ai là triệu phú Toán 12 - BÀI 1: TÍNH ĐƠN ĐIỆU VÀ CỰC TRỊ CỦA HÀM SỐ</title>
+    <meta name="description" content="Trò chơi Ai Là Triệu Phú Toán 12 - Bài 1: Tính đơn điệu và cực trị của hàm số (SGK Kết nối tri thức với cuộc sống)" />
+    <meta property="og:title" content="Ai là triệu phú Toán 12 - BÀI 1" />
+    <meta property="og:description" content="TÍNH ĐƠN ĐIỆU VÀ CỰC TRỊ CỦA HÀM SỐ - Trắc nghiệm phân loại 15 câu chuẩn cấu trúc GDPT 2018" />
+    <script>
+      // Safeguard for iframe environments where window.fetch has only a getter
+      (function() {
+        try {
+          var origFetch = window.fetch ? window.fetch.bind(window) : undefined;
+          var curFetch = origFetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() { return curFetch; },
+            set: function(fn) { curFetch = fn; },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (err) {
+          // ignore
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-[#020024] text-white antialiased selection:bg-yellow-500 selection:text-black">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

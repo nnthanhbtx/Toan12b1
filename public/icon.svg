@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#091E42" />
+      <stop offset="100%" stop-color="#020024" />
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF099" />
+      <stop offset="30%" stop-color="#F59E0B" />
+      <stop offset="70%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" />
+      <stop offset="100%" stop-color="#1E3A8A" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGlow)" />
+  
+  <!-- Outer glowing rings -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="url(#ringGrad)" stroke-width="8" opacity="0.6" />
+  <circle cx="256" cy="256" r="190" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-dasharray="12 8" opacity="0.8" />
+  
+  <!-- Central Badge -->
+  <circle cx="256" cy="256" r="160" fill="#030A1C" stroke="url(#goldGrad)" stroke-width="8" filter="url(#glow)" />
+  
+  <!-- Sparkles / Stars -->
+  <path d="M256 120 L260 138 L278 142 L260 146 L256 164 L252 146 L234 142 L252 138 Z" fill="#FDE047" />
+  <path d="M150 210 L153 222 L165 225 L153 228 L150 240 L147 228 L135 225 L147 222 Z" fill="#60A5FA" opacity="0.8" />
+  <path d="M362 210 L365 222 L377 225 L365 228 L362 240 L359 228 L347 225 L359 222 Z" fill="#60A5FA" opacity="0.8" />
+
+  <!-- Dollar / Millionaire Sign -->
+  <text x="256" y="295" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="150" fill="url(#goldGrad)" text-anchor="middle" filter="url(#glow)">$</text>
+
+  <!-- Math 12 banner -->
+  <rect x="146" y="340" width="220" height="46" rx="23" fill="#1E3A8A" stroke="#F59E0B" stroke-width="3" />
+  <text x="256" y="372" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="22" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">TOÁN 12 - BÀI 2</text>
+</svg>
